@@ -1,0 +1,151 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/kyu/Desktop/RotaryKeypad/app/src/main/AndroidManifest.xml:2:1-21:12
+INJECTED from /Users/kyu/Desktop/RotaryKeypad/app/src/main/AndroidManifest.xml:2:1-21:12
+INJECTED from /Users/kyu/Desktop/RotaryKeypad/app/src/main/AndroidManifest.xml:2:1-21:12
+INJECTED from /Users/kyu/Desktop/RotaryKeypad/app/src/main/AndroidManifest.xml:2:1-21:12
+MERGED from [com.android.support:appcompat-v7:28.0.0-alpha3] /Users/kyu/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-alpha3.aar/52b5377f4587161fd1d45dedd5b0c51c/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/kyu/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/3387e423efb7059d14353e6383e2bd7e/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:support-fragment:28.0.0-alpha3] /Users/kyu/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0-alpha3.aar/554241c418f2bde9ceaa99b814d21215/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0-alpha3] /Users/kyu/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0-alpha3.aar/3199e939bebdab558fa25137d917a2f5/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0-alpha3] /Users/kyu/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0-alpha3.aar/05492132c17bf442429d4069ab7e93cd/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0-alpha3] /Users/kyu/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0-alpha3.aar/382b22303890705282c4d0b02216ccb1/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0-alpha3] /Users/kyu/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0-alpha3.aar/819963c6352980b01378311b6b02d089/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0-alpha3] /Users/kyu/.gradle/caches/transforms-1/files-1.1/loader-28.0.0-alpha3.aar/7467bc2350f0601f45a0657987bd5916/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0-alpha3] /Users/kyu/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0-alpha3.aar/afad7d3def7c551684a165ee1ce80d27/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0-alpha3] /Users/kyu/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0-alpha3.aar/13cb49106ecf5f051360d49c871082bf/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0-alpha3] /Users/kyu/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0-alpha3.aar/30f9fe8bacacb88c49101d87c2c0f950/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0-alpha3] /Users/kyu/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0-alpha3.aar/0f71dc378faad386b1ee64b35ae5ef70/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0-alpha3] /Users/kyu/.gradle/caches/transforms-1/files-1.1/customview-28.0.0-alpha3.aar/98f38b41e791611181e9f3db3c914767/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0-alpha3] /Users/kyu/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0-alpha3.aar/f887a5c392bcd70547f2fe8aa06186a2/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0-alpha3] /Users/kyu/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0-alpha3.aar/2d99a0e294e5031ab02a2963b64e5e63/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0-alpha3] /Users/kyu/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0-alpha3.aar/31c0c5536a828b875c372de8566e681a/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:cursoradapter:28.0.0-alpha3] /Users/kyu/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0-alpha3.aar/f9fd642f262503f25921509159883a4e/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/kyu/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/74fe9b8614cd59da3a7c3ab3621d5fdd/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:versionedparcelable:28.0.0-alpha3] /Users/kyu/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0-alpha3.aar/15f2a1dfc0579a5131f49eeb90f3cba3/AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:documentfile:28.0.0-alpha3] /Users/kyu/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0-alpha3.aar/72e6aa11a646c5e7683aa7701b86193b/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0-alpha3] /Users/kyu/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0-alpha3.aar/1fc605fe55847e9f9632e5e71e3783b4/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0-alpha3] /Users/kyu/.gradle/caches/transforms-1/files-1.1/print-28.0.0-alpha3.aar/2114dc68d7b2385ecd3c1b3caf9a1436/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/kyu/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/8203637e7c1b39c03f3da47f543e3883/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/kyu/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/b5e8e17400ebf24deb0b70bf809887b3/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] /Users/kyu/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/c605cba401be9cd3947b09672cffd19a/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0-alpha3] /Users/kyu/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0-alpha3.aar/ddeb4daf30a017f882fbcda603397e15/AndroidManifest.xml:17:1-22:12
+INJECTED from /Users/kyu/Desktop/RotaryKeypad/app/src/main/AndroidManifest.xml:2:1-21:12
+INJECTED from /Users/kyu/Desktop/RotaryKeypad/app/src/main/AndroidManifest.xml:2:1-21:12
+INJECTED from /Users/kyu/Desktop/RotaryKeypad/app/src/main/AndroidManifest.xml:2:1-21:12
+	package
+		ADDED from /Users/kyu/Desktop/RotaryKeypad/app/src/main/AndroidManifest.xml:3:5-43
+		INJECTED from /Users/kyu/Desktop/RotaryKeypad/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/kyu/Desktop/RotaryKeypad/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/kyu/Desktop/RotaryKeypad/app/src/main/AndroidManifest.xml
+		ADDED from /Users/kyu/Desktop/RotaryKeypad/app/src/main/AndroidManifest.xml:2:1-21:12
+		INJECTED from /Users/kyu/Desktop/RotaryKeypad/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/kyu/Desktop/RotaryKeypad/app/src/main/AndroidManifest.xml
+		ADDED from /Users/kyu/Desktop/RotaryKeypad/app/src/main/AndroidManifest.xml:2:1-21:12
+		INJECTED from /Users/kyu/Desktop/RotaryKeypad/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/kyu/Desktop/RotaryKeypad/app/src/main/AndroidManifest.xml:2:11-69
+application
+ADDED from /Users/kyu/Desktop/RotaryKeypad/app/src/main/AndroidManifest.xml:5:5-19:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/kyu/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/3387e423efb7059d14353e6383e2bd7e/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/kyu/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/3387e423efb7059d14353e6383e2bd7e/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:support-compat:28.0.0-alpha3] /Users/kyu/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0-alpha3.aar/31c0c5536a828b875c372de8566e681a/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0-alpha3] /Users/kyu/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0-alpha3.aar/31c0c5536a828b875c372de8566e681a/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0-alpha3] /Users/kyu/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0-alpha3.aar/15f2a1dfc0579a5131f49eeb90f3cba3/AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0-alpha3] /Users/kyu/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0-alpha3.aar/15f2a1dfc0579a5131f49eeb90f3cba3/AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [com.android.support:support-compat:28.0.0-alpha3] /Users/kyu/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0-alpha3.aar/31c0c5536a828b875c372de8566e681a/AndroidManifest.xml:22:18-91
+	android:supportsRtl
+		ADDED from /Users/kyu/Desktop/RotaryKeypad/app/src/main/AndroidManifest.xml:10:9-35
+	android:label
+		ADDED from /Users/kyu/Desktop/RotaryKeypad/app/src/main/AndroidManifest.xml:8:9-41
+	android:roundIcon
+		ADDED from /Users/kyu/Desktop/RotaryKeypad/app/src/main/AndroidManifest.xml:9:9-54
+	android:icon
+		ADDED from /Users/kyu/Desktop/RotaryKeypad/app/src/main/AndroidManifest.xml:7:9-43
+	android:allowBackup
+		ADDED from /Users/kyu/Desktop/RotaryKeypad/app/src/main/AndroidManifest.xml:6:9-35
+	android:theme
+		ADDED from /Users/kyu/Desktop/RotaryKeypad/app/src/main/AndroidManifest.xml:11:9-40
+activity#com.example.kyu.rotarykeypad.MainActivity
+ADDED from /Users/kyu/Desktop/RotaryKeypad/app/src/main/AndroidManifest.xml:12:9-18:20
+	android:name
+		ADDED from /Users/kyu/Desktop/RotaryKeypad/app/src/main/AndroidManifest.xml:12:19-47
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/kyu/Desktop/RotaryKeypad/app/src/main/AndroidManifest.xml:13:13-17:29
+action#android.intent.action.MAIN
+ADDED from /Users/kyu/Desktop/RotaryKeypad/app/src/main/AndroidManifest.xml:14:17-69
+	android:name
+		ADDED from /Users/kyu/Desktop/RotaryKeypad/app/src/main/AndroidManifest.xml:14:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/kyu/Desktop/RotaryKeypad/app/src/main/AndroidManifest.xml:16:17-77
+	android:name
+		ADDED from /Users/kyu/Desktop/RotaryKeypad/app/src/main/AndroidManifest.xml:16:27-74
+uses-sdk
+INJECTED from /Users/kyu/Desktop/RotaryKeypad/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/kyu/Desktop/RotaryKeypad/app/src/main/AndroidManifest.xml
+INJECTED from /Users/kyu/Desktop/RotaryKeypad/app/src/main/AndroidManifest.xml
+MERGED from [com.android.support:appcompat-v7:28.0.0-alpha3] /Users/kyu/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-alpha3.aar/52b5377f4587161fd1d45dedd5b0c51c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0-alpha3] /Users/kyu/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-alpha3.aar/52b5377f4587161fd1d45dedd5b0c51c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/kyu/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/3387e423efb7059d14353e6383e2bd7e/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/kyu/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/3387e423efb7059d14353e6383e2bd7e/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:support-fragment:28.0.0-alpha3] /Users/kyu/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0-alpha3.aar/554241c418f2bde9ceaa99b814d21215/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0-alpha3] /Users/kyu/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0-alpha3.aar/554241c418f2bde9ceaa99b814d21215/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0-alpha3] /Users/kyu/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0-alpha3.aar/3199e939bebdab558fa25137d917a2f5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0-alpha3] /Users/kyu/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0-alpha3.aar/3199e939bebdab558fa25137d917a2f5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0-alpha3] /Users/kyu/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0-alpha3.aar/05492132c17bf442429d4069ab7e93cd/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0-alpha3] /Users/kyu/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0-alpha3.aar/05492132c17bf442429d4069ab7e93cd/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0-alpha3] /Users/kyu/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0-alpha3.aar/382b22303890705282c4d0b02216ccb1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0-alpha3] /Users/kyu/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0-alpha3.aar/382b22303890705282c4d0b02216ccb1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0-alpha3] /Users/kyu/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0-alpha3.aar/819963c6352980b01378311b6b02d089/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0-alpha3] /Users/kyu/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0-alpha3.aar/819963c6352980b01378311b6b02d089/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0-alpha3] /Users/kyu/.gradle/caches/transforms-1/files-1.1/loader-28.0.0-alpha3.aar/7467bc2350f0601f45a0657987bd5916/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0-alpha3] /Users/kyu/.gradle/caches/transforms-1/files-1.1/loader-28.0.0-alpha3.aar/7467bc2350f0601f45a0657987bd5916/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0-alpha3] /Users/kyu/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0-alpha3.aar/afad7d3def7c551684a165ee1ce80d27/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0-alpha3] /Users/kyu/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0-alpha3.aar/afad7d3def7c551684a165ee1ce80d27/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0-alpha3] /Users/kyu/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0-alpha3.aar/13cb49106ecf5f051360d49c871082bf/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0-alpha3] /Users/kyu/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0-alpha3.aar/13cb49106ecf5f051360d49c871082bf/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0-alpha3] /Users/kyu/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0-alpha3.aar/30f9fe8bacacb88c49101d87c2c0f950/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0-alpha3] /Users/kyu/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0-alpha3.aar/30f9fe8bacacb88c49101d87c2c0f950/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0-alpha3] /Users/kyu/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0-alpha3.aar/0f71dc378faad386b1ee64b35ae5ef70/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0-alpha3] /Users/kyu/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0-alpha3.aar/0f71dc378faad386b1ee64b35ae5ef70/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0-alpha3] /Users/kyu/.gradle/caches/transforms-1/files-1.1/customview-28.0.0-alpha3.aar/98f38b41e791611181e9f3db3c914767/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0-alpha3] /Users/kyu/.gradle/caches/transforms-1/files-1.1/customview-28.0.0-alpha3.aar/98f38b41e791611181e9f3db3c914767/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0-alpha3] /Users/kyu/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0-alpha3.aar/f887a5c392bcd70547f2fe8aa06186a2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0-alpha3] /Users/kyu/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0-alpha3.aar/f887a5c392bcd70547f2fe8aa06186a2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0-alpha3] /Users/kyu/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0-alpha3.aar/2d99a0e294e5031ab02a2963b64e5e63/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0-alpha3] /Users/kyu/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0-alpha3.aar/2d99a0e294e5031ab02a2963b64e5e63/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0-alpha3] /Users/kyu/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0-alpha3.aar/31c0c5536a828b875c372de8566e681a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0-alpha3] /Users/kyu/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0-alpha3.aar/31c0c5536a828b875c372de8566e681a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0-alpha3] /Users/kyu/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0-alpha3.aar/f9fd642f262503f25921509159883a4e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0-alpha3] /Users/kyu/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0-alpha3.aar/f9fd642f262503f25921509159883a4e/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/kyu/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/74fe9b8614cd59da3a7c3ab3621d5fdd/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/kyu/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/74fe9b8614cd59da3a7c3ab3621d5fdd/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0-alpha3] /Users/kyu/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0-alpha3.aar/15f2a1dfc0579a5131f49eeb90f3cba3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0-alpha3] /Users/kyu/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0-alpha3.aar/15f2a1dfc0579a5131f49eeb90f3cba3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0-alpha3] /Users/kyu/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0-alpha3.aar/72e6aa11a646c5e7683aa7701b86193b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0-alpha3] /Users/kyu/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0-alpha3.aar/72e6aa11a646c5e7683aa7701b86193b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0-alpha3] /Users/kyu/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0-alpha3.aar/1fc605fe55847e9f9632e5e71e3783b4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0-alpha3] /Users/kyu/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0-alpha3.aar/1fc605fe55847e9f9632e5e71e3783b4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0-alpha3] /Users/kyu/.gradle/caches/transforms-1/files-1.1/print-28.0.0-alpha3.aar/2114dc68d7b2385ecd3c1b3caf9a1436/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0-alpha3] /Users/kyu/.gradle/caches/transforms-1/files-1.1/print-28.0.0-alpha3.aar/2114dc68d7b2385ecd3c1b3caf9a1436/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/kyu/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/8203637e7c1b39c03f3da47f543e3883/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/kyu/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/8203637e7c1b39c03f3da47f543e3883/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/kyu/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/b5e8e17400ebf24deb0b70bf809887b3/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/kyu/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/b5e8e17400ebf24deb0b70bf809887b3/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/kyu/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/c605cba401be9cd3947b09672cffd19a/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/kyu/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/c605cba401be9cd3947b09672cffd19a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0-alpha3] /Users/kyu/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0-alpha3.aar/ddeb4daf30a017f882fbcda603397e15/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0-alpha3] /Users/kyu/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0-alpha3.aar/ddeb4daf30a017f882fbcda603397e15/AndroidManifest.xml:20:5-44
+INJECTED from /Users/kyu/Desktop/RotaryKeypad/app/src/main/AndroidManifest.xml
+INJECTED from /Users/kyu/Desktop/RotaryKeypad/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/kyu/Desktop/RotaryKeypad/app/src/main/AndroidManifest.xml
+		ADDED from /Users/kyu/Desktop/RotaryKeypad/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/kyu/Desktop/RotaryKeypad/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/kyu/Desktop/RotaryKeypad/app/src/main/AndroidManifest.xml
+		ADDED from /Users/kyu/Desktop/RotaryKeypad/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/kyu/Desktop/RotaryKeypad/app/src/main/AndroidManifest.xml

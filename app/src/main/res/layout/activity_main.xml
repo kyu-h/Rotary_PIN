@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+        <View
+            android:layout_width="320dip"
+            android:layout_height="320dip"
+            android:layout_centerInParent="true"
+            android:background="@drawable/bg" />
+        <View
+            android:layout_width="320dip"
+            android:layout_height="320dip"
+            android:layout_centerInParent="true"
+            android:background="@drawable/top" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="320dip"
+            android:layout_height="320dip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="170dp"
+            android:src="@drawable/ic_dial_number" />
+    </RelativeLayout>
+
+</LinearLayout>
