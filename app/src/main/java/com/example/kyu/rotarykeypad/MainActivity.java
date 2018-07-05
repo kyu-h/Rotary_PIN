@@ -7,8 +7,12 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnTouchListener;
 import android.view.animation.RotateAnimation;
+import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import java.util.Random;
 
 public class MainActivity extends Activity implements OnTouchListener{
     private ImageView wheel;
@@ -18,17 +22,61 @@ public class MainActivity extends Activity implements OnTouchListener{
     TextView textbox;
     CharSequence num = null;
     int click_count = 0;
+    int random_num;
+    Random random = new Random();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         textbox= findViewById(R.id.box);
+        View bg = (View)findViewById(R.id.bg);
+        View bg01 = (View)findViewById(R.id.bg01);
+        View bg02 = (View)findViewById(R.id.bg02);
+        View bg03 = (View)findViewById(R.id.bg03);
 
         wheel=(ImageView)findViewById(R.id.imageView1);
         wheel.setOnTouchListener(this);
 
-        wheel.bringToFront();
+        random_num = random.nextInt(3);
+
+        System.out.print("random num: ");
+        System.out.println(random_num);
+
+        if(random_num == 1){
+            bg.setVisibility(View.INVISIBLE);
+            bg01.setVisibility(View.VISIBLE);
+            bg02.setVisibility(View.INVISIBLE);
+            bg03.setVisibility(View.INVISIBLE);
+        }else if(random_num == 2){
+            bg.setVisibility(View.INVISIBLE);
+            bg01.setVisibility(View.INVISIBLE);
+            bg02.setVisibility(View.VISIBLE);
+            bg03.setVisibility(View.INVISIBLE);
+        }else if (random_num == 3){
+            bg.setVisibility(View.INVISIBLE);
+            bg01.setVisibility(View.INVISIBLE);
+            bg02.setVisibility(View.INVISIBLE);
+            bg03.setVisibility(View.VISIBLE);
+        }else {
+            bg.setVisibility(View.VISIBLE);
+            bg01.setVisibility(View.INVISIBLE);
+            bg02.setVisibility(View.INVISIBLE);
+            bg03.setVisibility(View.INVISIBLE);
+        }
+
+        ImageButton btn = (ImageButton)findViewById(R.id.imageButton);
+        btn.setOnClickListener(new Button.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // TODO : click event
+                System.out.println("ttttt");
+                textbox.setText("");
+            }
+        });
+
+
+        btn.bringToFront();
     }
 
     @Override
@@ -43,7 +91,7 @@ public class MainActivity extends Activity implements OnTouchListener{
             case MotionEvent.ACTION_DOWN: {
                 System.out.println("Action Down");
                 if(click_count == 4){
-                    textbox.setText("");
+                    //textbox.setText("");
                     click_count = 0;
                 }
                 mCurrAngle = Math.toDegrees(Math.atan2(x - xc, yc - y));

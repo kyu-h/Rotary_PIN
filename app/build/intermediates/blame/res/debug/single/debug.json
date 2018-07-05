@@ -184,6 +184,10 @@
         "source": "/Users/kyu/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-alpha3.aar/52b5377f4587161fd1d45dedd5b0c51c/res/drawable/abc_ratingbar_material.xml"
     },
     {
+        "merged": "/Users/kyu/Desktop/RotaryKeypad/app/build/intermediates/res/merged/debug/drawable_bg02.png.flat",
+        "source": "/Users/kyu/Desktop/RotaryKeypad/app/src/main/res/drawable/bg02.png"
+    },
+    {
         "merged": "/Users/kyu/Desktop/RotaryKeypad/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_ic_star_half_black_48dp.png.flat",
         "source": "/Users/kyu/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-alpha3.aar/52b5377f4587161fd1d45dedd5b0c51c/res/drawable-xxxhdpi-v4/abc_ic_star_half_black_48dp.png"
     },
@@ -830,6 +834,10 @@
     {
         "merged": "/Users/kyu/Desktop/RotaryKeypad/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_list_pressed_holo_dark.9.png.flat",
         "source": "/Users/kyu/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-alpha3.aar/52b5377f4587161fd1d45dedd5b0c51c/res/drawable-hdpi-v4/abc_list_pressed_holo_dark.9.png"
+    },
+    {
+        "merged": "/Users/kyu/Desktop/RotaryKeypad/app/build/intermediates/res/merged/debug/drawable_bg01.png.flat",
+        "source": "/Users/kyu/Desktop/RotaryKeypad/app/src/main/res/drawable/bg01.png"
     },
     {
         "merged": "/Users/kyu/Desktop/RotaryKeypad/app/build/intermediates/res/merged/debug/layout_abc_list_menu_item_checkbox.xml.flat",
@@ -1490,6 +1498,10 @@
     {
         "merged": "/Users/kyu/Desktop/RotaryKeypad/app/build/intermediates/res/merged/debug/layout-v21_notification_template_custom_big.xml.flat",
         "source": "/Users/kyu/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0-alpha3.aar/31c0c5536a828b875c372de8566e681a/res/layout-v21/notification_template_custom_big.xml"
+    },
+    {
+        "merged": "/Users/kyu/Desktop/RotaryKeypad/app/build/intermediates/res/merged/debug/drawable_bg03.png.flat",
+        "source": "/Users/kyu/Desktop/RotaryKeypad/app/src/main/res/drawable/bg03.png"
     },
     {
         "merged": "/Users/kyu/Desktop/RotaryKeypad/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_scrubber_control_off_mtrl_alpha.png.flat",
