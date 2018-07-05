@@ -30,51 +30,47 @@ public class MainActivity extends Activity implements OnTouchListener{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         textbox= findViewById(R.id.box);
-        View bg = (View)findViewById(R.id.bg);
-        View bg01 = (View)findViewById(R.id.bg01);
-        View bg02 = (View)findViewById(R.id.bg02);
-        View bg03 = (View)findViewById(R.id.bg03);
+        final View bg = (View)findViewById(R.id.bg);
+        final View bg01 = (View)findViewById(R.id.bg01);
+        final View bg02 = (View)findViewById(R.id.bg02);
+        final View bg03 = (View)findViewById(R.id.bg03);
 
         wheel=(ImageView)findViewById(R.id.imageView1);
         wheel.setOnTouchListener(this);
 
         random_num = random.nextInt(3);
 
-        System.out.print("random num: ");
-        System.out.println(random_num);
-
-        if(random_num == 1){
-            bg.setVisibility(View.INVISIBLE);
-            bg01.setVisibility(View.VISIBLE);
-            bg02.setVisibility(View.INVISIBLE);
-            bg03.setVisibility(View.INVISIBLE);
-        }else if(random_num == 2){
-            bg.setVisibility(View.INVISIBLE);
-            bg01.setVisibility(View.INVISIBLE);
-            bg02.setVisibility(View.VISIBLE);
-            bg03.setVisibility(View.INVISIBLE);
-        }else if (random_num == 3){
-            bg.setVisibility(View.INVISIBLE);
-            bg01.setVisibility(View.INVISIBLE);
-            bg02.setVisibility(View.INVISIBLE);
-            bg03.setVisibility(View.VISIBLE);
-        }else {
-            bg.setVisibility(View.VISIBLE);
-            bg01.setVisibility(View.INVISIBLE);
-            bg02.setVisibility(View.INVISIBLE);
-            bg03.setVisibility(View.INVISIBLE);
-        }
-
         ImageButton btn = (ImageButton)findViewById(R.id.imageButton);
         btn.setOnClickListener(new Button.OnClickListener() {
             @Override
             public void onClick(View view) {
                 // TODO : click event
-                System.out.println("ttttt");
                 textbox.setText("");
+                random_num = random.nextInt(3);
+
+                if(random_num == 1){
+                    bg.setVisibility(View.INVISIBLE);
+                    bg01.setVisibility(View.VISIBLE);
+                    bg02.setVisibility(View.INVISIBLE);
+                    bg03.setVisibility(View.INVISIBLE);
+                }else if(random_num == 2){
+                    bg.setVisibility(View.INVISIBLE);
+                    bg01.setVisibility(View.INVISIBLE);
+                    bg02.setVisibility(View.VISIBLE);
+                    bg03.setVisibility(View.INVISIBLE);
+                }else if (random_num == 3){
+                    bg.setVisibility(View.INVISIBLE);
+                    bg01.setVisibility(View.INVISIBLE);
+                    bg02.setVisibility(View.INVISIBLE);
+                    bg03.setVisibility(View.VISIBLE);
+                }else {
+                    bg.setVisibility(View.VISIBLE);
+                    bg01.setVisibility(View.INVISIBLE);
+                    bg02.setVisibility(View.INVISIBLE);
+                    bg03.setVisibility(View.INVISIBLE);
+                }
             }
         });
-
 
         btn.bringToFront();
     }
@@ -96,26 +92,94 @@ public class MainActivity extends Activity implements OnTouchListener{
                 }
                 mCurrAngle = Math.toDegrees(Math.atan2(x - xc, yc - y));
                 System.out.println(mCurrAngle);
-                if(39<mCurrAngle && mCurrAngle<55){
-                    num = "1";
-                }else if(8<mCurrAngle && mCurrAngle<25){
-                    num = "2";
-                }else if(-5>mCurrAngle && mCurrAngle>-23){
-                    num = "3";
-                }else if(-36>mCurrAngle && mCurrAngle>-53){
-                    num = "4";
-                }else if(-68>mCurrAngle && mCurrAngle>-85){
-                    num = "5";
-                }else if(-97>mCurrAngle && mCurrAngle>-113){
-                    num = "6";
-                }else if(-128>mCurrAngle && mCurrAngle>-143){
-                    num = "7";
-                }else if(-155>mCurrAngle && mCurrAngle>-175){
-                    num = "8";
-                }else if(156<mCurrAngle && mCurrAngle<174){
-                    num = "9";
-                }else if(129<mCurrAngle && mCurrAngle<143){
-                    num = "0";
+                if(random_num == 1){
+                    if(39<mCurrAngle && mCurrAngle<55){
+                        num = "2";
+                    }else if(8<mCurrAngle && mCurrAngle<25){
+                        num = "1";
+                    }else if(-5>mCurrAngle && mCurrAngle>-23){
+                        num = "9";
+                    }else if(-36>mCurrAngle && mCurrAngle>-53){
+                        num = "4";
+                    }else if(-68>mCurrAngle && mCurrAngle>-85){
+                        num = "5";
+                    }else if(-97>mCurrAngle && mCurrAngle>-113){
+                        num = "7";
+                    }else if(-128>mCurrAngle && mCurrAngle>-143){
+                        num = "8";
+                    }else if(-155>mCurrAngle && mCurrAngle>-175){
+                        num = "6";
+                    }else if(156<mCurrAngle && mCurrAngle<174){
+                        num = "0";
+                    }else if(129<mCurrAngle && mCurrAngle<143){
+                        num = "3";
+                    }
+                }else if(random_num == 2){
+                    if(39<mCurrAngle && mCurrAngle<55){
+                        num = "7";
+                    }else if(8<mCurrAngle && mCurrAngle<25){
+                        num = "2";
+                    }else if(-5>mCurrAngle && mCurrAngle>-23){
+                        num = "4";
+                    }else if(-36>mCurrAngle && mCurrAngle>-53){
+                        num = "6";
+                    }else if(-68>mCurrAngle && mCurrAngle>-85){
+                        num = "0";
+                    }else if(-97>mCurrAngle && mCurrAngle>-113){
+                        num = "5";
+                    }else if(-128>mCurrAngle && mCurrAngle>-143){
+                        num = "8";
+                    }else if(-155>mCurrAngle && mCurrAngle>-175){
+                        num = "9";
+                    }else if(156<mCurrAngle && mCurrAngle<174){
+                        num = "3";
+                    }else if(129<mCurrAngle && mCurrAngle<143){
+                        num = "1";
+                    }
+                }else if(random_num == 3){
+                    if(39<mCurrAngle && mCurrAngle<55){
+                        num = "8";
+                    }else if(8<mCurrAngle && mCurrAngle<25){
+                        num = "5";
+                    }else if(-5>mCurrAngle && mCurrAngle>-23){
+                        num = "0";
+                    }else if(-36>mCurrAngle && mCurrAngle>-53){
+                        num = "4";
+                    }else if(-68>mCurrAngle && mCurrAngle>-85){
+                        num = "6";
+                    }else if(-97>mCurrAngle && mCurrAngle>-113){
+                        num = "1";
+                    }else if(-128>mCurrAngle && mCurrAngle>-143){
+                        num = "2";
+                    }else if(-155>mCurrAngle && mCurrAngle>-175){
+                        num = "7";
+                    }else if(156<mCurrAngle && mCurrAngle<174){
+                        num = "3";
+                    }else if(129<mCurrAngle && mCurrAngle<143){
+                        num = "9";
+                    }
+                }else {
+                    if(39<mCurrAngle && mCurrAngle<55){
+                        num = "1";
+                    }else if(8<mCurrAngle && mCurrAngle<25){
+                        num = "2";
+                    }else if(-5>mCurrAngle && mCurrAngle>-23){
+                        num = "3";
+                    }else if(-36>mCurrAngle && mCurrAngle>-53){
+                        num = "4";
+                    }else if(-68>mCurrAngle && mCurrAngle>-85){
+                        num = "5";
+                    }else if(-97>mCurrAngle && mCurrAngle>-113){
+                        num = "6";
+                    }else if(-128>mCurrAngle && mCurrAngle>-143){
+                        num = "7";
+                    }else if(-155>mCurrAngle && mCurrAngle>-175){
+                        num = "8";
+                    }else if(156<mCurrAngle && mCurrAngle<174){
+                        num = "9";
+                    }else if(129<mCurrAngle && mCurrAngle<143){
+                        num = "0";
+                    }
                 }
                 break;
             }
