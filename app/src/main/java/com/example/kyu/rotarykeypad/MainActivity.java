@@ -23,6 +23,7 @@ public class MainActivity extends Activity implements OnTouchListener{
     CharSequence num = null;
     int click_count = 0;
     int random_num;
+    int tmp;
     Random random = new Random();
 
     @Override
@@ -34,11 +35,45 @@ public class MainActivity extends Activity implements OnTouchListener{
         final View bg01 = (View)findViewById(R.id.bg01);
         final View bg02 = (View)findViewById(R.id.bg02);
         final View bg03 = (View)findViewById(R.id.bg03);
+        final View bg04 = (View)findViewById(R.id.bg04);
 
         wheel=(ImageView)findViewById(R.id.imageView1);
         wheel.setOnTouchListener(this);
 
-        random_num = random.nextInt(3);
+        random_num = random.nextInt(4);
+        System.out.println(random_num);
+
+        if(random_num == 1){
+            bg.setVisibility(View.INVISIBLE);
+            bg01.setVisibility(View.VISIBLE);
+            bg02.setVisibility(View.INVISIBLE);
+            bg03.setVisibility(View.INVISIBLE);
+            bg04.setVisibility(View.INVISIBLE);
+        }else if(random_num == 2){
+            bg.setVisibility(View.INVISIBLE);
+            bg01.setVisibility(View.INVISIBLE);
+            bg02.setVisibility(View.VISIBLE);
+            bg03.setVisibility(View.INVISIBLE);
+            bg04.setVisibility(View.INVISIBLE);
+        }else if (random_num == 3){
+            bg.setVisibility(View.INVISIBLE);
+            bg01.setVisibility(View.INVISIBLE);
+            bg02.setVisibility(View.INVISIBLE);
+            bg03.setVisibility(View.VISIBLE);
+            bg04.setVisibility(View.INVISIBLE);
+        }else if (random_num == 4){
+            bg.setVisibility(View.INVISIBLE);
+            bg01.setVisibility(View.INVISIBLE);
+            bg02.setVisibility(View.INVISIBLE);
+            bg03.setVisibility(View.INVISIBLE);
+            bg04.setVisibility(View.VISIBLE);
+        }else {
+            bg.setVisibility(View.VISIBLE);
+            bg01.setVisibility(View.INVISIBLE);
+            bg02.setVisibility(View.INVISIBLE);
+            bg03.setVisibility(View.INVISIBLE);
+            bg04.setVisibility(View.INVISIBLE);
+        }
 
         ImageButton btn = (ImageButton)findViewById(R.id.imageButton);
         btn.setOnClickListener(new Button.OnClickListener() {
@@ -46,28 +81,47 @@ public class MainActivity extends Activity implements OnTouchListener{
             public void onClick(View view) {
                 // TODO : click event
                 textbox.setText("");
-                random_num = random.nextInt(3);
+                tmp = random.nextInt(4);
+                System.out.println(tmp);
+                if(random_num == tmp){
+                    while(random_num == tmp){
+                        random_num = random.nextInt(4);
+                        System.out.println(random_num);
+                    }
+                }else {
+                    random_num = tmp;
+                }
 
                 if(random_num == 1){
                     bg.setVisibility(View.INVISIBLE);
                     bg01.setVisibility(View.VISIBLE);
                     bg02.setVisibility(View.INVISIBLE);
                     bg03.setVisibility(View.INVISIBLE);
+                    bg04.setVisibility(View.INVISIBLE);
                 }else if(random_num == 2){
                     bg.setVisibility(View.INVISIBLE);
                     bg01.setVisibility(View.INVISIBLE);
                     bg02.setVisibility(View.VISIBLE);
                     bg03.setVisibility(View.INVISIBLE);
+                    bg04.setVisibility(View.INVISIBLE);
                 }else if (random_num == 3){
                     bg.setVisibility(View.INVISIBLE);
                     bg01.setVisibility(View.INVISIBLE);
                     bg02.setVisibility(View.INVISIBLE);
                     bg03.setVisibility(View.VISIBLE);
+                    bg04.setVisibility(View.INVISIBLE);
+                }else if (random_num == 4){
+                    bg.setVisibility(View.INVISIBLE);
+                    bg01.setVisibility(View.INVISIBLE);
+                    bg02.setVisibility(View.INVISIBLE);
+                    bg03.setVisibility(View.INVISIBLE);
+                    bg04.setVisibility(View.VISIBLE);
                 }else {
                     bg.setVisibility(View.VISIBLE);
                     bg01.setVisibility(View.INVISIBLE);
                     bg02.setVisibility(View.INVISIBLE);
                     bg03.setVisibility(View.INVISIBLE);
+                    bg04.setVisibility(View.INVISIBLE);
                 }
             }
         });
@@ -157,6 +211,28 @@ public class MainActivity extends Activity implements OnTouchListener{
                         num = "3";
                     }else if(129<mCurrAngle && mCurrAngle<143){
                         num = "9";
+                    }
+                }else if(random_num == 4){
+                    if (39 < mCurrAngle && mCurrAngle < 55) {
+                        num = "1";
+                    } else if (8 < mCurrAngle && mCurrAngle < 25) {
+                        num = "2";
+                    } else if (-5 > mCurrAngle && mCurrAngle > -23) {
+                        num = "5";
+                    } else if (-36 > mCurrAngle && mCurrAngle > -53) {
+                        num = "0";
+                    } else if (-68 > mCurrAngle && mCurrAngle > -85) {
+                        num = "4";
+                    } else if (-97 > mCurrAngle && mCurrAngle > -113) {
+                        num = "8";
+                    } else if (-128 > mCurrAngle && mCurrAngle > -143) {
+                        num = "6";
+                    } else if (-155 > mCurrAngle && mCurrAngle > -175) {
+                        num = "9";
+                    } else if (156 < mCurrAngle && mCurrAngle < 174) {
+                        num = "3";
+                    } else if (129 < mCurrAngle && mCurrAngle < 143) {
+                        num = "7";
                     }
                 }else {
                     if(39<mCurrAngle && mCurrAngle<55){
