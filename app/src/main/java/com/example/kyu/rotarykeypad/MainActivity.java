@@ -13,6 +13,9 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.Collections;
 import java.util.Random;
 
 public class MainActivity extends Activity implements OnTouchListener{
@@ -22,6 +25,7 @@ public class MainActivity extends Activity implements OnTouchListener{
     RelativeLayout layout;
     ImageView bask;
     TextView textbox;
+    TextView num00, num01, num02, num03, num04, num05, num06, num07, num08, num09;
     CharSequence num = null;
     int click_count = 0;
     int random_num;
@@ -30,55 +34,68 @@ public class MainActivity extends Activity implements OnTouchListener{
     int tmp;
     Random random = new Random();
 
+    final int arr[] = new int[10];
+    boolean _switch[] = new boolean[arr.length];
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         textbox= findViewById(R.id.box);
-        final View bg = (View)findViewById(R.id.bg);
-        final View bg01 = (View)findViewById(R.id.bg01);
-        final View bg02 = (View)findViewById(R.id.bg02);
-        final View bg03 = (View)findViewById(R.id.bg03);
-        final View bg04 = (View)findViewById(R.id.bg04);
         layout = findViewById(R.id.layout);
+        num00 = findViewById(R.id.text00);
+        num01 = findViewById(R.id.text01);
+        num02 = findViewById(R.id.text02);
+        num03 = findViewById(R.id.text03);
+        num04 = findViewById(R.id.text04);
+        num05 = findViewById(R.id.text05);
+        num06 = findViewById(R.id.text06);
+        num07 = findViewById(R.id.text07);
+        num08 = findViewById(R.id.text08);
+        num09 = findViewById(R.id.text09);
 
         wheel=(ImageView)findViewById(R.id.imageView1);
         wheel.setOnTouchListener(this);
 
         random_num = random.nextInt(4);
-        System.out.println(random_num);
 
-        if(random_num == 1){
-            bg.setVisibility(View.INVISIBLE);
-            bg01.setVisibility(View.VISIBLE);
-            bg02.setVisibility(View.INVISIBLE);
-            bg03.setVisibility(View.INVISIBLE);
-            bg04.setVisibility(View.INVISIBLE);
-        }else if(random_num == 2){
-            bg.setVisibility(View.INVISIBLE);
-            bg01.setVisibility(View.INVISIBLE);
-            bg02.setVisibility(View.VISIBLE);
-            bg03.setVisibility(View.INVISIBLE);
-            bg04.setVisibility(View.INVISIBLE);
-        }else if (random_num == 3){
-            bg.setVisibility(View.INVISIBLE);
-            bg01.setVisibility(View.INVISIBLE);
-            bg02.setVisibility(View.INVISIBLE);
-            bg03.setVisibility(View.VISIBLE);
-            bg04.setVisibility(View.INVISIBLE);
-        }else if (random_num == 4){
-            bg.setVisibility(View.INVISIBLE);
-            bg01.setVisibility(View.INVISIBLE);
-            bg02.setVisibility(View.INVISIBLE);
-            bg03.setVisibility(View.INVISIBLE);
-            bg04.setVisibility(View.VISIBLE);
-        }else {
-            bg.setVisibility(View.VISIBLE);
-            bg01.setVisibility(View.INVISIBLE);
-            bg02.setVisibility(View.INVISIBLE);
-            bg03.setVisibility(View.INVISIBLE);
-            bg04.setVisibility(View.INVISIBLE);
+        for (int i=0; i<arr.length; i++){
+            arr[i] = i;
         }
+        System.out.println("\n섞기 전");
+        for (int i=0; i<arr.length; i++){
+            System.out.print(arr[i]+" ");
+        }
+
+        for (int i=0; i<_switch.length; i++){
+            _switch[i] = true;
+        }
+
+        int w=0;
+        int r;
+        while (w<arr.length){
+            r = (int)(Math.random()*arr.length);
+            if(_switch[r]){
+                _switch[r] = false;
+                arr[w] = r;
+                w++;
+            }
+        }
+        System.out.println("\n섞은 후");
+        for (int i=0; i<arr.length; i++){
+            System.out.print(arr[i]+" ");
+        }
+
+        num00.setText(arr[0]+"");
+        num01.setText(arr[1]+"");
+        num02.setText(arr[2]+"");
+        num03.setText(arr[3]+"");
+        num04.setText(arr[4]+"");
+        num05.setText(arr[5]+"");
+        num06.setText(arr[6]+"");
+        num07.setText(arr[7]+"");
+        num08.setText(arr[8]+"");
+        num09.setText(arr[9]+"");
 
         ImageButton btn = (ImageButton)findViewById(R.id.imageButton);
         btn.setOnClickListener(new Button.OnClickListener() {
@@ -87,54 +104,50 @@ public class MainActivity extends Activity implements OnTouchListener{
                 // TODO : click event
                 textbox.setText("");
 
+                for (int i=0; i<arr.length; i++){
+                    arr[i] = i;
+                }
+                System.out.println("\n섞기 전");
+                for (int i=0; i<arr.length; i++){
+                    System.out.print(arr[i]+" ");
+                }
+
+                for (int i=0; i<_switch.length; i++){
+                    _switch[i] = true;
+                }
+
+                int w=0;
+                int r;
+                while (w<arr.length){
+                    r = (int)(Math.random()*arr.length);
+                    if(_switch[r]){
+                        _switch[r] = false;
+                        arr[w] = r;
+                        w++;
+                    }
+                }
+                System.out.println("\n섞은 후");
+                for (int i=0; i<arr.length; i++){
+                    System.out.print(arr[i]+" ");
+                }
+
                 rand_x = random.nextInt(200);
                 rand_y = random.nextInt(700);
 
                 layout.setX(-100 + rand_x);
                 layout.setY(-300 + rand_y);
 
-                tmp = random.nextInt(4);
-                System.out.println(tmp);
-                if(random_num == tmp){
-                    while(random_num == tmp){
-                        random_num = random.nextInt(4);
-                        System.out.println(random_num);
-                    }
-                }else {
-                    random_num = tmp;
-                }
+                num00.setText(arr[0]+"");
+                num01.setText(arr[1]+"");
+                num02.setText(arr[2]+"");
+                num03.setText(arr[3]+"");
+                num04.setText(arr[4]+"");
+                num05.setText(arr[5]+"");
+                num06.setText(arr[6]+"");
+                num07.setText(arr[7]+"");
+                num08.setText(arr[8]+"");
+                num09.setText(arr[9]+"");
 
-                if(random_num == 1){
-                    bg.setVisibility(View.INVISIBLE);
-                    bg01.setVisibility(View.VISIBLE);
-                    bg02.setVisibility(View.INVISIBLE);
-                    bg03.setVisibility(View.INVISIBLE);
-                    bg04.setVisibility(View.INVISIBLE);
-                }else if(random_num == 2){
-                    bg.setVisibility(View.INVISIBLE);
-                    bg01.setVisibility(View.INVISIBLE);
-                    bg02.setVisibility(View.VISIBLE);
-                    bg03.setVisibility(View.INVISIBLE);
-                    bg04.setVisibility(View.INVISIBLE);
-                }else if (random_num == 3){
-                    bg.setVisibility(View.INVISIBLE);
-                    bg01.setVisibility(View.INVISIBLE);
-                    bg02.setVisibility(View.INVISIBLE);
-                    bg03.setVisibility(View.VISIBLE);
-                    bg04.setVisibility(View.INVISIBLE);
-                }else if (random_num == 4){
-                    bg.setVisibility(View.INVISIBLE);
-                    bg01.setVisibility(View.INVISIBLE);
-                    bg02.setVisibility(View.INVISIBLE);
-                    bg03.setVisibility(View.INVISIBLE);
-                    bg04.setVisibility(View.VISIBLE);
-                }else {
-                    bg.setVisibility(View.VISIBLE);
-                    bg01.setVisibility(View.INVISIBLE);
-                    bg02.setVisibility(View.INVISIBLE);
-                    bg03.setVisibility(View.INVISIBLE);
-                    bg04.setVisibility(View.INVISIBLE);
-                }
             }
         });
 
@@ -158,116 +171,26 @@ public class MainActivity extends Activity implements OnTouchListener{
                 }
                 mCurrAngle = Math.toDegrees(Math.atan2(x - xc, yc - y));
                 System.out.println(mCurrAngle);
-                if(random_num == 1){
-                    if(39<mCurrAngle && mCurrAngle<55){
-                        num = "2";
-                    }else if(8<mCurrAngle && mCurrAngle<25){
-                        num = "1";
-                    }else if(-5>mCurrAngle && mCurrAngle>-23){
-                        num = "9";
-                    }else if(-36>mCurrAngle && mCurrAngle>-53){
-                        num = "4";
-                    }else if(-68>mCurrAngle && mCurrAngle>-85){
-                        num = "5";
-                    }else if(-97>mCurrAngle && mCurrAngle>-113){
-                        num = "7";
-                    }else if(-128>mCurrAngle && mCurrAngle>-143){
-                        num = "8";
-                    }else if(-155>mCurrAngle && mCurrAngle>-175){
-                        num = "6";
-                    }else if(156<mCurrAngle && mCurrAngle<174){
-                        num = "0";
-                    }else if(129<mCurrAngle && mCurrAngle<143){
-                        num = "3";
-                    }
-                }else if(random_num == 2){
-                    if(39<mCurrAngle && mCurrAngle<55){
-                        num = "7";
-                    }else if(8<mCurrAngle && mCurrAngle<25){
-                        num = "2";
-                    }else if(-5>mCurrAngle && mCurrAngle>-23){
-                        num = "4";
-                    }else if(-36>mCurrAngle && mCurrAngle>-53){
-                        num = "6";
-                    }else if(-68>mCurrAngle && mCurrAngle>-85){
-                        num = "0";
-                    }else if(-97>mCurrAngle && mCurrAngle>-113){
-                        num = "5";
-                    }else if(-128>mCurrAngle && mCurrAngle>-143){
-                        num = "8";
-                    }else if(-155>mCurrAngle && mCurrAngle>-175){
-                        num = "9";
-                    }else if(156<mCurrAngle && mCurrAngle<174){
-                        num = "3";
-                    }else if(129<mCurrAngle && mCurrAngle<143){
-                        num = "1";
-                    }
-                }else if(random_num == 3){
-                    if(39<mCurrAngle && mCurrAngle<55){
-                        num = "8";
-                    }else if(8<mCurrAngle && mCurrAngle<25){
-                        num = "5";
-                    }else if(-5>mCurrAngle && mCurrAngle>-23){
-                        num = "0";
-                    }else if(-36>mCurrAngle && mCurrAngle>-53){
-                        num = "4";
-                    }else if(-68>mCurrAngle && mCurrAngle>-85){
-                        num = "6";
-                    }else if(-97>mCurrAngle && mCurrAngle>-113){
-                        num = "1";
-                    }else if(-128>mCurrAngle && mCurrAngle>-143){
-                        num = "2";
-                    }else if(-155>mCurrAngle && mCurrAngle>-175){
-                        num = "7";
-                    }else if(156<mCurrAngle && mCurrAngle<174){
-                        num = "3";
-                    }else if(129<mCurrAngle && mCurrAngle<143){
-                        num = "9";
-                    }
-                }else if(random_num == 4){
-                    if (39 < mCurrAngle && mCurrAngle < 55) {
-                        num = "1";
-                    } else if (8 < mCurrAngle && mCurrAngle < 25) {
-                        num = "2";
-                    } else if (-5 > mCurrAngle && mCurrAngle > -23) {
-                        num = "5";
-                    } else if (-36 > mCurrAngle && mCurrAngle > -53) {
-                        num = "0";
-                    } else if (-68 > mCurrAngle && mCurrAngle > -85) {
-                        num = "4";
-                    } else if (-97 > mCurrAngle && mCurrAngle > -113) {
-                        num = "8";
-                    } else if (-128 > mCurrAngle && mCurrAngle > -143) {
-                        num = "6";
-                    } else if (-155 > mCurrAngle && mCurrAngle > -175) {
-                        num = "9";
-                    } else if (156 < mCurrAngle && mCurrAngle < 174) {
-                        num = "3";
-                    } else if (129 < mCurrAngle && mCurrAngle < 143) {
-                        num = "7";
-                    }
-                }else {
-                    if(39<mCurrAngle && mCurrAngle<55){
-                        num = "1";
-                    }else if(8<mCurrAngle && mCurrAngle<25){
-                        num = "2";
-                    }else if(-5>mCurrAngle && mCurrAngle>-23){
-                        num = "3";
-                    }else if(-36>mCurrAngle && mCurrAngle>-53){
-                        num = "4";
-                    }else if(-68>mCurrAngle && mCurrAngle>-85){
-                        num = "5";
-                    }else if(-97>mCurrAngle && mCurrAngle>-113){
-                        num = "6";
-                    }else if(-128>mCurrAngle && mCurrAngle>-143){
-                        num = "7";
-                    }else if(-155>mCurrAngle && mCurrAngle>-175){
-                        num = "8";
-                    }else if(156<mCurrAngle && mCurrAngle<174){
-                        num = "9";
-                    }else if(129<mCurrAngle && mCurrAngle<143){
-                        num = "0";
-                    }
+                if(39<mCurrAngle && mCurrAngle<55){
+                    num = arr[1]+"";
+                }else if(8<mCurrAngle && mCurrAngle<25){
+                    num = arr[2]+"";
+                }else if(-5>mCurrAngle && mCurrAngle>-23){
+                    num = arr[3]+"";
+                }else if(-36>mCurrAngle && mCurrAngle>-53){
+                    num = arr[4]+"";
+                }else if(-68>mCurrAngle && mCurrAngle>-85){
+                    num = arr[5]+"";
+                }else if(-97>mCurrAngle && mCurrAngle>-113){
+                    num = arr[6]+"";
+                }else if(-128>mCurrAngle && mCurrAngle>-143){
+                    num = arr[7]+"";
+                }else if(-155>mCurrAngle && mCurrAngle>-175){
+                    num = arr[8]+"";
+                }else if(156<mCurrAngle && mCurrAngle<174){
+                    num = arr[9]+"";
+                }else if(129<mCurrAngle && mCurrAngle<143){
+                    num = arr[0]+"";
                 }
                 break;
             }
