@@ -10,6 +10,7 @@ import android.view.animation.RotateAnimation;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import java.util.Random;
@@ -18,11 +19,14 @@ public class MainActivity extends Activity implements OnTouchListener{
     private ImageView wheel;
     private double mCurrAngle = 0;
     private double mPrevAngle = 0;
+    RelativeLayout layout;
     ImageView bask;
     TextView textbox;
     CharSequence num = null;
     int click_count = 0;
     int random_num;
+    int rand_x = 0;
+    int rand_y = 0;
     int tmp;
     Random random = new Random();
 
@@ -36,6 +40,7 @@ public class MainActivity extends Activity implements OnTouchListener{
         final View bg02 = (View)findViewById(R.id.bg02);
         final View bg03 = (View)findViewById(R.id.bg03);
         final View bg04 = (View)findViewById(R.id.bg04);
+        layout = findViewById(R.id.layout);
 
         wheel=(ImageView)findViewById(R.id.imageView1);
         wheel.setOnTouchListener(this);
@@ -81,6 +86,13 @@ public class MainActivity extends Activity implements OnTouchListener{
             public void onClick(View view) {
                 // TODO : click event
                 textbox.setText("");
+
+                rand_x = random.nextInt(200);
+                rand_y = random.nextInt(700);
+
+                layout.setX(-100 + rand_x);
+                layout.setY(-300 + rand_y);
+
                 tmp = random.nextInt(4);
                 System.out.println(tmp);
                 if(random_num == tmp){
