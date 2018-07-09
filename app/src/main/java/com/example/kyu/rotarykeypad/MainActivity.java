@@ -13,6 +13,7 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.Collections;
@@ -23,7 +24,6 @@ public class MainActivity extends Activity implements OnTouchListener{
     private double mCurrAngle = 0;
     private double mPrevAngle = 0;
     RelativeLayout layout;
-    ImageView bask;
     TextView textbox;
     TextView num00, num01, num02, num03, num04, num05, num06, num07, num08, num09;
     CharSequence num = null;
@@ -35,12 +35,12 @@ public class MainActivity extends Activity implements OnTouchListener{
     Random random = new Random();
 
     final int arr[] = new int[10];
-    boolean _switch[] = new boolean[arr.length];
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         textbox= findViewById(R.id.box);
         layout = findViewById(R.id.layout);
         num00 = findViewById(R.id.text00);
@@ -57,33 +57,81 @@ public class MainActivity extends Activity implements OnTouchListener{
         wheel=(ImageView)findViewById(R.id.imageView1);
         wheel.setOnTouchListener(this);
 
-        random_num = random.nextInt(4);
+        random_num = random.nextInt(9);
 
-        for (int i=0; i<arr.length; i++){
-            arr[i] = i;
-        }
-        System.out.println("\n섞기 전");
-        for (int i=0; i<arr.length; i++){
-            System.out.print(arr[i]+" ");
-        }
-
-        for (int i=0; i<_switch.length; i++){
-            _switch[i] = true;
-        }
-
-        int w=0;
-        int r;
-        while (w<arr.length){
-            r = (int)(Math.random()*arr.length);
-            if(_switch[r]){
-                _switch[r] = false;
-                arr[w] = r;
-                w++;
+        if(random_num == 0){
+            for (int i=random_num; i<arr.length; i++){
+                arr[i] = i;
             }
-        }
-        System.out.println("\n섞은 후");
-        for (int i=0; i<arr.length; i++){
-            System.out.print(arr[i]+" ");
+        }else if(random_num == 1){
+            for (int i=random_num; i<arr.length; i++){
+                arr[i] = i-random_num;
+            }
+            arr[0] = 9;
+        }else if(random_num == 2){
+            for (int i=random_num; i<arr.length; i++){
+                arr[i] = i-random_num;
+            }
+
+            for (int i=0; i<random_num; i++){
+                arr[i] = i+8;
+            }
+        }else if(random_num == 3){
+            for (int i=random_num; i<arr.length; i++){
+                arr[i] = i-random_num;
+            }
+
+            for (int i=0; i<random_num; i++){
+                arr[i] = i+7;
+            }
+        }else if(random_num == 4){
+            for (int i=random_num; i<arr.length; i++){
+                arr[i] = i-random_num;
+            }
+
+            for (int i=0; i<random_num; i++){
+                arr[i] = i+6;
+            }
+        }else if(random_num == 5){
+            for (int i=random_num; i<arr.length; i++){
+                arr[i] = i-random_num;
+            }
+
+            for (int i=0; i<random_num; i++){
+                arr[i] = i+5;
+            }
+        }else if(random_num == 6){
+            for (int i=random_num; i<arr.length; i++){
+                arr[i] = i-random_num;
+            }
+
+            for (int i=0; i<random_num; i++){
+                arr[i] = i+4;
+            }
+        }else if(random_num == 7){
+            for (int i=random_num; i<arr.length; i++){
+                arr[i] = i-random_num;
+            }
+
+            for (int i=0; i<random_num; i++){
+                arr[i] = i+3;
+            }
+        }else if(random_num == 8){
+            for (int i=random_num; i<arr.length; i++){
+                arr[i] = i-random_num;
+            }
+
+            for (int i=0; i<random_num; i++){
+                arr[i] = i+2;
+            }
+        }else if(random_num == 9){
+            for (int i=random_num; i<arr.length; i++){
+                arr[i] = i-random_num;
+            }
+
+            for (int i=0; i<random_num; i++){
+                arr[i] = i+1;
+            }
         }
 
         num00.setText(arr[0]+"");
@@ -103,32 +151,81 @@ public class MainActivity extends Activity implements OnTouchListener{
             public void onClick(View view) {
                 // TODO : click event
                 textbox.setText("");
+                random_num = random.nextInt(9);
 
-                for (int i=0; i<arr.length; i++){
-                    arr[i] = i;
-                }
-                System.out.println("\n섞기 전");
-                for (int i=0; i<arr.length; i++){
-                    System.out.print(arr[i]+" ");
-                }
-
-                for (int i=0; i<_switch.length; i++){
-                    _switch[i] = true;
-                }
-
-                int w=0;
-                int r;
-                while (w<arr.length){
-                    r = (int)(Math.random()*arr.length);
-                    if(_switch[r]){
-                        _switch[r] = false;
-                        arr[w] = r;
-                        w++;
+                if(random_num == 0){
+                    for (int i=random_num; i<arr.length; i++){
+                        arr[i] = i;
                     }
-                }
-                System.out.println("\n섞은 후");
-                for (int i=0; i<arr.length; i++){
-                    System.out.print(arr[i]+" ");
+                }else if(random_num == 1){
+                    for (int i=random_num; i<arr.length; i++){
+                        arr[i] = i-random_num;
+                    }
+                    arr[0] = 9;
+                }else if(random_num == 2){
+                    for (int i=random_num; i<arr.length; i++){
+                        arr[i] = i-random_num;
+                    }
+
+                    for (int i=0; i<random_num; i++){
+                        arr[i] = i+8;
+                    }
+                }else if(random_num == 3){
+                    for (int i=random_num; i<arr.length; i++){
+                        arr[i] = i-random_num;
+                    }
+
+                    for (int i=0; i<random_num; i++){
+                        arr[i] = i+7;
+                    }
+                }else if(random_num == 4){
+                    for (int i=random_num; i<arr.length; i++){
+                        arr[i] = i-random_num;
+                    }
+
+                    for (int i=0; i<random_num; i++){
+                        arr[i] = i+6;
+                    }
+                }else if(random_num == 5){
+                    for (int i=random_num; i<arr.length; i++){
+                        arr[i] = i-random_num;
+                    }
+
+                    for (int i=0; i<random_num; i++){
+                        arr[i] = i+5;
+                    }
+                }else if(random_num == 6){
+                    for (int i=random_num; i<arr.length; i++){
+                        arr[i] = i-random_num;
+                    }
+
+                    for (int i=0; i<random_num; i++){
+                        arr[i] = i+4;
+                    }
+                }else if(random_num == 7){
+                    for (int i=random_num; i<arr.length; i++){
+                        arr[i] = i-random_num;
+                    }
+
+                    for (int i=0; i<random_num; i++){
+                        arr[i] = i+3;
+                    }
+                }else if(random_num == 8){
+                    for (int i=random_num; i<arr.length; i++){
+                        arr[i] = i-random_num;
+                    }
+
+                    for (int i=0; i<random_num; i++){
+                        arr[i] = i+2;
+                    }
+                }else if(random_num == 9){
+                    for (int i=random_num; i<arr.length; i++){
+                        arr[i] = i-random_num;
+                    }
+
+                    for (int i=0; i<random_num; i++){
+                        arr[i] = i+1;
+                    }
                 }
 
                 rand_x = random.nextInt(200);
