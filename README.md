@@ -2,6 +2,20 @@
 I got the base code and img from <a href="https://medium.com/@ssaurel/transform-your-android-smartphone-into-an-old-school-rotary-dialer-454d046bd40f" target="_blank">reference site</a>
 <hr>
 
+ <table style="margin-left: auto; margin-right: auto;">
+  <tr>
+   <th>The information of experiment environment</th>
+  </tr>
+  <tr>
+    <th>
+    Device: Nexus 5X<br>
+    OS: Android<br>
+    Version: API28<br>
+    Display: 420dpi<br></th>
+  </tr>
+ </table>
+<hr>
+
 Random number with rotation keypad
 
 I got this idea from old phone which is under the picture <br>
